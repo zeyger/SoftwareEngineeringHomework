@@ -5,3 +5,10 @@ C:\Users\Владислав\source\repos\XMLparser\XMLparser\obj\Debug\XMLparser
 C:\Users\Владислав\source\repos\XMLparser\XMLparser\obj\Debug\XMLparser.csproj.CoreCompileInputs.cache
 C:\Users\Владислав\source\repos\XMLparser\XMLparser\obj\Debug\XMLparser.exe
 C:\Users\Владислав\source\repos\XMLparser\XMLparser\obj\Debug\XMLparser.pdb
+D:\SoftwareEngineeringHomework\XMLparser\obj\Debug\XMLparser.csprojResolveAssemblyReference.cache
+D:\SoftwareEngineeringHomework\XMLparser\obj\Debug\XMLparser.csproj.CoreCompileInputs.cache
+D:\SoftwareEngineeringHomework\XMLparser\obj\Debug\XMLparser.exe
+D:\SoftwareEngineeringHomework\XMLparser\obj\Debug\XMLparser.pdb
+D:\SoftwareEngineeringHomework\XMLparser\bin\Debug\XMLparser.exe.config
+D:\SoftwareEngineeringHomework\XMLparser\bin\Debug\XMLparser.exe
+D:\SoftwareEngineeringHomework\XMLparser\bin\Debug\XMLparser.pdb
