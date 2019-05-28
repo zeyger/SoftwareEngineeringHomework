@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
 
 namespace XMLparser
 {
-    class Program
+    class XMLparser
     {
         static void Main()
         {
@@ -17,9 +14,10 @@ namespace XMLparser
             string output_path = "../../output.xml";
             var books = readfromXML(input_path);
             writeToXML(output_path, books);
-            
-            
+
         }
+
+
         private static List<Book> readfromXML(string path)
         {
             using (XmlReader reader = XmlReader.Create(path))
@@ -42,12 +40,12 @@ namespace XMLparser
                                 if (book != null)
                                 {
                                     Books.Add(book);
-                                } 
+                                }
                                 book = new Book();
                                 // Detect this article element.
                                 Console.WriteLine("Start <book> element.");
 
-                                // Search for the attribute name on this current node.
+                                // Search for the attribute id on this current node.
                                 string id = reader["id"];
                                 if (id != null)
                                 {
@@ -99,9 +97,9 @@ namespace XMLparser
                                 break;
                         }
                     }
-                   
+
                 }
-                
+
                 return Books;
             }
         }
@@ -121,7 +119,7 @@ namespace XMLparser
                                             new XElement("description", book.description)
                                             ));
             }
-            
+
             XDocument xDoc = new XDocument(catalog);
             xDoc.Save(path);
         }
