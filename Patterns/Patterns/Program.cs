@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Patterns
 {
-    
+    // Strategy interface
     interface IExecute
     {
         int execute(int a, int b);
     }
 
-    
+    //strategy algorithms
     class ConcreteReduceAdd : IExecute
     {
         public int execute(int a, int b)
@@ -45,9 +45,9 @@ namespace Patterns
         }
     }
 
-    
 
 
+    //Strategy incapsulator (?)
     class Context
     {
         private IExecute executor;
@@ -98,7 +98,7 @@ namespace Patterns
         static void Main(string[] args)
         {
 
-            //Strategy
+            //Strategy + Decorator
             var context = new ContextDecorator();
 
             var action = Console.ReadLine();
@@ -126,7 +126,7 @@ namespace Patterns
                 context.SetExecutor(new ConcreteReduceDivide());
             }
 
-            // 6. Выполнить операцию с помощью стратегии:
+          
             var result = context.ExecuteExecutor(a, b);
 
             Console.WriteLine(result);
