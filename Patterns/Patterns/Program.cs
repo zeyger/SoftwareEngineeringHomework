@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Patterns
 {
-    // Общий интерфейс всех стратегий.
+    
     interface IExecute
     {
         int execute(int a, int b);
     }
 
-    // Каждая конкретная стратегия реализует общий интерфейс своим
-    // способом.
+    
     class ConcreteReduceAdd : IExecute
     {
         public int execute(int a, int b)
@@ -46,8 +45,7 @@ namespace Patterns
         }
     }
 
-    // Контекст всегда работает со стратегиями через общий
-    // интерфейс. Он не знает, какая именно стратегия ему подана.
+    
 
 
     class Context
